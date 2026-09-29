@@ -128,12 +128,67 @@ As regras ficam em [backend/app/services/calculo.py](backend/app/services/calcul
 ## Estrutura
 
 ```
-backend/app/
-  api/        rotas REST (/api/...)
-  models/     SQLAlchemy (usuario, gerente, motorista, ponto, roteiro, ponto_roteiro, parametro, auditoria)
-  services/   calculo, roteiros (montagem/coleta), consultas (histórico/dashboard), auditoria, lgpd, relatorios, geocoding
-  seed.py     dados de demonstração
-frontend/src/
-  pages/      Dashboard, Coleta (Minha rota), Histórico, Roteiros, Pontos, Motoristas, Gerentes, Parâmetros, Usuários, Auditoria
-  lib/        cliente da API, autenticação, formatação
+mvp_es/
+├── docker-compose.yml          # PostgreSQL 16 (contêiner mvp_es_db, porta 5435, volume pgdata)
+├── backend/                    # API — Python + FastAPI
+│   ├── .env.example            # modelo do .env (banco, JWT_SECRET, fuso, Nominatim)
+│   ├── requirements.txt        # dependências da API (requirements-dev.txt inclui as de teste)
+│   ├── pyproject.toml          # configuração do pytest
+│   ├── alembic.ini
+│   ├── alembic/versions/       # migrações do banco (esquema inicial)
+│   ├── db-init/                # SQL executado na 1ª subida do contêiner (cria o banco mvp_test)
+│   ├── app/
+│   │   ├── main.py             # cria o FastAPI, CORS e monta as rotas sob /api
+│   │   ├── seed.py             # dados de demonstração (python -m app.seed [--reset])
+│   │   ├── api/                # rotas REST: auth, usuarios, gerentes, motoristas, pontos, parametros,
+│   │   │                       #   roteiros, coleta, historico, dashboard, relatorios, auditoria
+│   │   ├── core/               # config (lê o .env), security (bcrypt, JWT), deps (usuário logado, perfil, escopo)
+│   │   ├── db/                 # base declarativa e sessão do SQLAlchemy
+│   │   ├── models/             # tabelas: usuario, gerente, motorista, ponto, roteiro + ponto_roteiro,
+│   │   │                       #   parametro, auditoria
+│   │   ├── schemas/            # Pydantic: entrada e saída da API (cadastros, roteiros, dashboard)
+│   │   └── services/           # regras de negócio
+│   │       ├── calculo.py      #   RN01–RN07: tempo parado, totais, % da jornada, distância, custo
+│   │       ├── roteiros.py     #   montar roteiro, registrar chegada/saída, corrigir horários, recalcular
+│   │       ├── consultas.py    #   histórico e agregações do dashboard (dia, mês, período)
+│   │       ├── relatorios.py   #   exportação CSV
+│   │       ├── auditoria.py    #   registra antes/depois de cada alteração (listener do SQLAlchemy)
+│   │       ├── lgpd.py         #   mascaramento de documento e anonimização
+│   │       ├── geocoding.py    #   coordenadas pelo endereço (Nominatim / OpenStreetMap)
+│   │       └── cadastros.py    #   usuários e formatação de cadastros
+│   └── tests/                  # pytest: cálculo, roteiros/coleta, permissões/LGPD, dashboard/CSV
+├── frontend/                   # app web — React + Vite + TypeScript
+│   ├── .env.example            # VITE_APP_NAME (nome exibido no app)
+│   ├── index.html
+│   ├── vite.config.ts          # porta 5173 e proxy de /api para localhost:8000
+│   ├── components.json         # configuração do shadcn/ui
+│   ├── public/                 # favicon
+│   └── src/
+│       ├── main.tsx            # providers (TanStack Query, autenticação, avisos)
+│       ├── App.tsx             # rotas e acesso por perfil
+│       ├── pages/              # Login, Coleta (Minha rota), Dashboard, Historico, Roteiros, RoteiroForm,
+│       │                       #   RoteiroDetalhe, Pontos, Motoristas, Gerentes, Parametros, Usuarios, Auditoria
+│       ├── components/
+│       │   ├── layout/         # AppLayout: menu lateral (desktop) e menu do celular
+│       │   ├── ui/             # componentes do shadcn/ui (botão, tabela, diálogo, combobox…)
+│       │   ├── comum.tsx       # cabeçalho de página, cards de KPI, estados de carregando/vazio/erro
+│       │   ├── filtros.tsx     # filtros de período e de motorista
+│       │   ├── graficos.tsx    # gráficos do dashboard (Recharts)
+│       │   └── SeletorPonto.tsx  # seleção de ponto com busca por nome ou endereço
+│       ├── hooks/queries.ts    # consultas reutilizadas (motoristas, pontos, gerentes, parâmetros)
+│       └── lib/                # api (axios + token), auth, format (datas, minutos, moeda), form (validação), types
+└── docs/diagramas/             # diagramas UML em SVG e PNG
+    ├── casosDeUso/             # casos de uso
+    ├── robustez/               # robustez (ICONIX) dos casos UC03/04, UC05, UC07, UC08, UC10 e UC12
+    ├── classes/                # classes (modelo de domínio e serviços)
+    └── componentes/            # componentes (navegador, Vite, API, banco e serviços externos)
 ```
+
+### Diagramas
+
+| Diagrama | Arquivo |
+|---|---|
+| Casos de uso | [casos-de-uso.png](docs/diagramas/casosDeUso/casos-de-uso.png) |
+| Robustez | [pasta robustez](docs/diagramas/robustez/): um diagrama por caso de uso |
+| Classes | [diagrama-de-classes.png](docs/diagramas/classes/diagrama-de-classes.png) |
+| Componentes | [diagrama-de-componentes.png](docs/diagramas/componentes/diagrama-de-componentes.png) |
