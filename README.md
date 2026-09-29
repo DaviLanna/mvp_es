@@ -7,31 +7,90 @@ Engenharia de Software II (PUC Minas) — 2º trabalho. Mede quanto tempo o moto
 | Backend | Python 3.12, FastAPI, SQLAlchemy 2, Alembic, PostgreSQL 16 |
 | Frontend | React 19, Vite, TypeScript, Tailwind v4, shadcn/ui, Recharts, TanStack Query |
 
+## Pré-requisitos
+
+Instale na sua máquina:
+
+| Ferramenta | Versão | Para quê | Onde baixar |
+|---|---|---|---|
+| **Git** | qualquer recente | clonar o repositório | https://git-scm.com/downloads |
+| **Docker Desktop** (Windows/macOS) ou Docker Engine + Compose (Linux) | recente | roda o banco PostgreSQL | https://www.docker.com/products/docker-desktop |
+| **Python** | 3.12 ou mais | backend (API) | https://www.python.org/downloads (no Windows, marque *Add python.exe to PATH*) |
+| **Node.js** (já vem com o npm) | 20.19+ ou 22.12+ | frontend | https://nodejs.org (versão LTS) |
+
+> ⚠️ **O Docker precisa estar instalado e rodando** antes de qualquer comando. No Windows/macOS, abra o
+> Docker Desktop e espere aparecer *Engine running* (ícone verde). Sem isso, o banco não sobe e a API não
+> inicia. No Windows, o instalador do Docker Desktop pede para ativar o WSL 2; aceite e reinicie se ele pedir.
+
+Não é preciso instalar o PostgreSQL: ele roda dentro do Docker, na porta **5435**, e não conflita com um
+Postgres local nas portas 5432 e 5433. Também precisam estar livres as portas **8000** (API) e **5173** (app).
+Na primeira instalação é preciso internet, para baixar pacotes do pip e do npm e a imagem do Postgres.
+
+### Conferir se está tudo instalado
+
+```powershell
+git --version
+docker --version
+docker info          # se der "error during connect", o Docker Desktop não está aberto
+python --version     # 3.12 ou mais
+node --version       # v20.19+ ou v22.12+
+npm --version
+```
+
 ## Como rodar
 
-Pré-requisitos: Docker, Python 3.12+ e Node 20.19+.
+Os comandos abaixo são para o PowerShell (Windows). No macOS/Linux, use `python3`, ative o venv com
+`source .venv/bin/activate` e copie o `.env` com `cp .env.example .env`.
 
-```bash
-# 1) Banco (Postgres na porta 5435 do host)
-docker compose up -d db
+**Primeira vez (instalação):**
 
-# 2) Backend — http://localhost:8000/docs
+```powershell
+git clone https://github.com/DaviLanna/mvp_es.git
+cd mvp_es
+
+docker compose up -d db                  # Postgres na porta 5435 do host
+
 cd backend
-python -m venv .venv
-.venv/Scripts/activate        # Linux/macOS: source .venv/bin/activate
+python -m venv .venv                     # só na primeira vez (falha se o venv já estiver ativo)
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements-dev.txt
-cp .env.example .env          # se ainda não existir
+if (-not (Test-Path .env)) { Copy-Item .env.example .env }
 alembic upgrade head
-python -m app.seed            # dados de demonstração (--reset para recriar)
-uvicorn app.main:app --reload
+python -m app.seed                       # dados de demonstração (--reset para recriar)
 
-# 3) Frontend — http://localhost:5173
-cd frontend
+cd ..\frontend
 npm install
+cd ..
+```
+
+**Para rodar (dois terminais, porque cada servidor fica ocupando o seu):**
+
+```powershell
+# Terminal 1 — API em http://localhost:8000/docs
+docker compose up -d db
+cd backend
+.\.venv\Scripts\Activate.ps1
+uvicorn app.main:app --reload
+```
+
+```powershell
+# Terminal 2 — app em http://localhost:5173
+cd frontend
 npm run dev
 ```
 
-O Vite encaminha `/api` para `localhost:8000`.
+O Vite encaminha `/api` para `localhost:8000`. Abra http://localhost:5173 e entre com um dos acessos abaixo.
+
+### Problemas comuns
+
+| Sintoma | Causa e solução |
+|---|---|
+| `error during connect ... dockerDesktopLinuxEngine` | O Docker Desktop não está aberto. Abra-o, espere *Engine running* e repita o comando. |
+| `alembic upgrade head` trava ou dá erro de conexão | O banco não subiu. Rode `docker compose ps`: o `mvp_es_db` precisa estar `healthy`. |
+| `Activate.ps1 não pode ser carregado` | Política do PowerShell. Rode `Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned` e ative de novo. |
+| `Permission denied ... python.exe` ao criar o venv | O venv já existe e está ativo. Pule o `python -m venv .venv`. |
+| `npm error enoent ... package.json` | O comando foi rodado na pasta errada. O `npm` roda dentro de `frontend`. |
+| Porta 5435 ocupada | Rode `$env:DB_PORT=5440` antes do `docker compose up` e troque a porta no `DATABASE_URL` e no `TEST_DATABASE_URL` do `backend/.env`. |
 
 ### Acessos de demonstração
 
@@ -45,9 +104,15 @@ O seed cria cerca de 12 meses de histórico, os roteiros A, B e C do enunciado (
 
 ## Testes
 
-```bash
-cd backend && pytest        # usa o banco mvp_test (criado pelo docker compose)
-cd frontend && npm run build
+Com o Docker rodando, a partir da raiz do projeto:
+
+```powershell
+cd backend
+.\.venv\Scripts\Activate.ps1
+pytest                      # usa o banco mvp_test (criado pelo docker compose)
+
+cd ..\frontend
+npm run build
 ```
 
 ## Regras de negócio implementadas
