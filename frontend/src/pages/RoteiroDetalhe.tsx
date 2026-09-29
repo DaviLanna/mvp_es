@@ -5,6 +5,7 @@ import { Link, useNavigate, useParams } from "react-router"
 import { toast } from "sonner"
 
 import { Campo, Carregando, ErroCarregamento, KpiCard, PageHeader, Spinner, StatusBadge } from "@/components/comum"
+import { SeletorPonto } from "@/components/SeletorPonto"
 import {
   AlertDialog,
   AlertDialogAction,
@@ -20,7 +21,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Switch } from "@/components/ui/switch"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { usePontos } from "@/hooks/queries"
@@ -380,19 +380,14 @@ export default function RoteiroDetalhe() {
 
           {gestor && roteiro.status !== "CONCLUIDO" && (
             <div className="flex flex-col gap-2 sm:flex-row">
-              <Select value={novoPonto} onValueChange={setNovoPonto}>
-                <SelectTrigger className="w-full sm:w-96">
-                  <SelectValue placeholder="Adicionar ponto ao final do roteiro" />
-                </SelectTrigger>
-                <SelectContent>
-                  {pontos?.map((p) => (
-                    <SelectItem key={p.id} value={String(p.id)}>
-                      {p.descricao} — {p.endereco}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-              <Button variant="secondary" disabled={!novoPonto || adicionar.isPending} onClick={() => adicionar.mutate()}>
+              <SeletorPonto
+                pontos={pontos}
+                valor={novoPonto}
+                onChange={setNovoPonto}
+                placeholder="Adicionar ponto ao final do roteiro"
+                className="sm:max-w-xl"
+              />
+              <Button variant="secondary" className="shrink-0" disabled={!novoPonto || adicionar.isPending} onClick={() => adicionar.mutate()}>
                 <Plus />
                 Adicionar
               </Button>

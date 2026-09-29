@@ -5,6 +5,7 @@ import { Link, useNavigate, useParams } from "react-router"
 import { toast } from "sonner"
 
 import { Campo, Carregando, PageHeader, Spinner } from "@/components/comum"
+import { SeletorPonto } from "@/components/SeletorPonto"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -113,7 +114,7 @@ export default function RoteiroForm() {
           <CardHeader>
             <CardTitle>Dados do roteiro</CardTitle>
           </CardHeader>
-          <CardContent className="grid gap-4">
+          <CardContent className="grid grid-cols-1 gap-4">
             <Campo label="Nome (opcional)" htmlFor="nome">
               <Input id="nome" value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Ex.: Roteiro A" maxLength={80} />
             </Campo>
@@ -146,23 +147,13 @@ export default function RoteiroForm() {
             <CardTitle>Pontos em ordem</CardTitle>
             <CardDescription>Adicione pelo menos a partida e um destino.</CardDescription>
           </CardHeader>
-          <CardContent className="grid gap-4">
+          <CardContent className="grid grid-cols-1 gap-4">
             <div className="flex gap-2">
-              <Select value={pontoParaAdicionar} onValueChange={setPontoParaAdicionar}>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Escolha um ponto cadastrado" />
-                </SelectTrigger>
-                <SelectContent>
-                  {pontos?.map((p) => (
-                    <SelectItem key={p.id} value={String(p.id)}>
-                      {p.descricao} — {p.endereco}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+              <SeletorPonto pontos={pontos} valor={pontoParaAdicionar} onChange={setPontoParaAdicionar} />
               <Button
                 type="button"
                 variant="secondary"
+                className="shrink-0"
                 disabled={!pontoParaAdicionar}
                 onClick={() => {
                   setSequencia((s) => [...s, Number(pontoParaAdicionar)])
@@ -188,12 +179,12 @@ export default function RoteiroForm() {
                         {i === 0 ? <Flag className="size-3.5" /> : i + 1}
                       </span>
                       <div className="min-w-0 flex-1">
-                        <p className="truncate text-sm font-medium">
+                        <p className="text-sm font-medium break-words">
                           {p?.descricao ?? `Ponto #${pid}`}
-                          {i === 0 && <span className="ml-2 text-xs font-normal text-muted-foreground">partida · não conta tempo</span>}
+                          {i === 0 && <span className="block text-xs font-normal text-muted-foreground sm:ml-2 sm:inline">partida · não conta tempo</span>}
                         </p>
-                        <p className="flex items-center gap-1 truncate text-xs text-muted-foreground">
-                          <MapPin className="size-3 shrink-0" />
+                        <p className="flex items-start gap-1 text-xs break-words text-muted-foreground">
+                          <MapPin className="mt-0.5 size-3 shrink-0" />
                           {p?.endereco}
                         </p>
                       </div>
