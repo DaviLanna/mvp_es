@@ -1,6 +1,7 @@
 # MVP — PontoaPonto
 
-Engenharia de Software II (PUC Minas) — 2º trabalho. Mede quanto tempo o motorista/motoboy fica parado em cada ponto do roteiro diário, mostra um dashboard por dia/mês/período e calcula o custo do trajeto.
+Engenharia de Software II (PUC Minas) — 2º trabalho.
+Mede quanto tempo o motorista/motoboy fica parado em cada ponto do roteiro diário, mostra um dashboard por dia/mês/período e calcula o custo do trajeto.
 
 | Camada | Tecnologias |
 |---|---|
