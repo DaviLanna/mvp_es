@@ -1,7 +1,7 @@
 import { endOfMonth, format, parseISO, startOfMonth, subDays } from "date-fns"
 import { ptBR } from "date-fns/locale"
 
-export const APP_NAME = import.meta.env.VITE_APP_NAME || "Tempo Parado"
+export const APP_NAME = import.meta.env.VITE_APP_NAME || "PontoaPonto"
 
 /** 75 → "1h 15min"; 8.4 → "8min"; null → "—" */
 export function formatMin(minutos: number | null | undefined): string {

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1160" viewBox="0 0 1500 1160"><defs><marker id="seta" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11" fill="none" stroke="#374151" stroke-width="1.4"/></marker><marker id="triangulo" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L15,8 L1,15 Z" fill="#ffffff" stroke="#374151" stroke-width="1.4"/></marker></defs>
+<rect width="1500" height="1160" fill="#ffffff"/>
+<rect x="300" y="30" width="940" height="1095" rx="8" fill="#fcfcfd" stroke="#1f2937" stroke-width="1.6"/>
+<text x="770.0" y="62.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="middle">Sistema de Monitoramento de Tempo Parado em Roteiros (MVP)</text>
+<line x1="136.0" y1="193.0" x2="430.5" y2="131.0" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="193.0" x2="379.2" y2="180.0" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="193.0" x2="395.1" y2="220.0" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="193.0" x2="443.5" y2="273.4" stroke="#374151" stroke-width="1.4"/>
+<line x1="251.0" y1="385.0" x2="375.4" y2="389.5" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="594.0" x2="449.7" y2="503.2" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="594.0" x2="405.0" y2="558.5" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="594.0" x2="373.7" y2="600.0" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="594.0" x2="422.1" y2="646.3" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="594.0" x2="459.1" y2="703.9" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="932.0" x2="449.7" y2="841.2" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="932.0" x2="405.0" y2="896.5" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="932.0" x2="373.7" y2="938.0" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="932.0" x2="422.1" y2="984.3" stroke="#374151" stroke-width="1.4"/>
+<line x1="136.0" y1="932.0" x2="459.1" y2="1041.9" stroke="#374151" stroke-width="1.4"/>
+<line x1="1364.0" y1="604.0" x2="1212.0" y2="604.0" stroke="#374151" stroke-width="1.4"/>
+<line x1="673.4" y1="406.3" x2="924.6" y2="426.2" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#seta)"/>
+<text x="799.0" y="409.2" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic">«include»</text>
+<line x1="672.8" y1="468.5" x2="925.2" y2="448.1" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#seta)"/>
+<text x="799.0" y="474.3" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic">«include»</text>
+<line x1="688.0" y1="542.0" x2="912.0" y2="542.0" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#seta)"/>
+<text x="800.0" y="535.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic">«include»</text>
+<line x1="912.0" y1="604.0" x2="688.0" y2="604.0" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#seta)"/>
+<text x="800.0" y="597.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic">«extend»</text>
+<line x1="110.0" y1="301.0" x2="110.0" y2="267.0" stroke="#374151" stroke-width="1.4" marker-end="url(#triangulo)"/>
+<line x1="225.0" y1="343.0" x2="110.0" y2="301.0" stroke="#374151" stroke-width="1.4"/>
+<line x1="110.0" y1="552.0" x2="110.0" y2="301.0" stroke="#374151" stroke-width="1.4"/>
+<line x1="110.0" y1="890.0" x2="110.0" y2="684.0" stroke="#374151" stroke-width="1.4" marker-end="url(#triangulo)"/>
+<ellipse cx="530" cy="110" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="109.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Fazer login</text>
+<text x="530.0" y="125.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC01 · RNF04</text>
+<ellipse cx="530" cy="172" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="171.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Consultar roteiros do dia</text>
+<text x="530.0" y="187.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC02 · RF05</text>
+<ellipse cx="530" cy="234" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="233.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Consultar histórico de paradas</text>
+<text x="530.0" y="249.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC03 · RF07</text>
+<ellipse cx="530" cy="296" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="295.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Exportar relatório do período (CSV)</text>
+<text x="530.0" y="311.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC04 · RF12</text>
+<ellipse cx="530" cy="395" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="394.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Registrar chegada e saída nos pontos</text>
+<text x="530.0" y="410.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC05 · RF05</text>
+<ellipse cx="530" cy="480" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="479.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Corrigir horários de parada</text>
+<text x="530.0" y="495.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC06 · RF05 · RNF05</text>
+<ellipse cx="530" cy="542" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="541.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Montar roteiro diário</text>
+<text x="530.0" y="557.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC07 · RF04</text>
+<ellipse cx="530" cy="604" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="603.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Manter pontos (endereços)</text>
+<text x="530.0" y="619.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC08 · RF03</text>
+<ellipse cx="530" cy="666" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="665.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Manter motoristas / motoboys</text>
+<text x="530.0" y="681.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC09 · RF01</text>
+<ellipse cx="530" cy="728" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="727.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Visualizar dashboard de tempo parado</text>
+<text x="530.0" y="743.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC10 · RF08</text>
+<ellipse cx="530" cy="818" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="817.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Manter gerentes / coordenadores</text>
+<text x="530.0" y="833.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC11 · RF02</text>
+<ellipse cx="530" cy="880" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="879.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Parametrizar custos e jornada</text>
+<text x="530.0" y="895.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC12 · RF09 · RF10</text>
+<ellipse cx="530" cy="942" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="941.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Gerenciar usuários e perfis de acesso</text>
+<text x="530.0" y="957.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC13 · RNF04</text>
+<ellipse cx="530" cy="1004" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="1003.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Consultar registros de auditoria</text>
+<text x="530.0" y="1019.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC14 · RNF05</text>
+<ellipse cx="530" cy="1066" rx="158" ry="27" fill="#f2f6ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="530.0" y="1065.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Anonimizar dados pessoais (LGPD)</text>
+<text x="530.0" y="1081.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC15 · RNF06</text>
+<ellipse cx="1062" cy="437" rx="150" ry="27" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+<text x="1062.0" y="436.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Calcular tempo parado</text>
+<text x="1062.0" y="452.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC16 · RF06 · RN01–RN04</text>
+<ellipse cx="1062" cy="542" rx="150" ry="27" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+<text x="1062.0" y="541.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Calcular distância e custo do roteiro</text>
+<text x="1062.0" y="557.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC17 · RF11 · RN07</text>
+<ellipse cx="1062" cy="604" rx="150" ry="27" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+<text x="1062.0" y="603.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#111827" text-anchor="middle">Buscar coordenadas do endereço</text>
+<text x="1062.0" y="619.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b7280" text-anchor="middle">UC18 · RF03</text>
+<g stroke="#111827" stroke-width="1.8" fill="none" stroke-linecap="round">
+<circle cx="110" cy="167" r="11" fill="#ffffff"/>
+<line x1="110" y1="178" x2="110" y2="211"/>
+<line x1="90" y1="189" x2="130" y2="189"/>
+<line x1="110" y1="211" x2="94" y2="239"/>
+<line x1="110" y1="211" x2="126" y2="239"/>
+</g>
+<text x="110.0" y="259.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle" font-style="italic">Usuário</text>
+<g stroke="#111827" stroke-width="1.8" fill="none" stroke-linecap="round">
+<circle cx="225" cy="359" r="11" fill="#ffffff"/>
+<line x1="225" y1="370" x2="225" y2="403"/>
+<line x1="205" y1="381" x2="245" y2="381"/>
+<line x1="225" y1="403" x2="209" y2="431"/>
+<line x1="225" y1="403" x2="241" y2="431"/>
+</g>
+<text x="225.0" y="451.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Motorista /</text>
+<text x="225.0" y="467.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Motoboy</text>
+<g stroke="#111827" stroke-width="1.8" fill="none" stroke-linecap="round">
+<circle cx="110" cy="568" r="11" fill="#ffffff"/>
+<line x1="110" y1="579" x2="110" y2="612"/>
+<line x1="90" y1="590" x2="130" y2="590"/>
+<line x1="110" y1="612" x2="94" y2="640"/>
+<line x1="110" y1="612" x2="126" y2="640"/>
+</g>
+<text x="110.0" y="660.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Gerente /</text>
+<text x="110.0" y="676.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Coordenador</text>
+<g stroke="#111827" stroke-width="1.8" fill="none" stroke-linecap="round">
+<circle cx="110" cy="906" r="11" fill="#ffffff"/>
+<line x1="110" y1="917" x2="110" y2="950"/>
+<line x1="90" y1="928" x2="130" y2="928"/>
+<line x1="110" y1="950" x2="94" y2="978"/>
+<line x1="110" y1="950" x2="126" y2="978"/>
+</g>
+<text x="110.0" y="998.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Administrador</text>
+<g stroke="#111827" stroke-width="1.8" fill="none" stroke-linecap="round">
+<circle cx="1390" cy="578" r="11" fill="#ffffff"/>
+<line x1="1390" y1="589" x2="1390" y2="622"/>
+<line x1="1370" y1="600" x2="1410" y2="600"/>
+<line x1="1390" y1="622" x2="1374" y2="650"/>
+<line x1="1390" y1="622" x2="1406" y2="650"/>
+</g>
+<text x="1390.0" y="670.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Serviço de mapas</text>
+<text x="1390.0" y="686.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">(OpenStreetMap)</text>
+</svg>
