@@ -1,0 +1,278 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1885" height="1782" viewBox="0 0 1885 1782">
+<defs><marker id="nav" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11" fill="none" stroke="#374151" stroke-width="1.5"/></marker><marker id="dep" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11" fill="none" stroke="#374151" stroke-width="1.5"/></marker><marker id="comp" viewBox="0 0 22 12" refX="1" refY="6" markerWidth="22" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,6 L11,1 L21,6 L11,11 Z" fill="#374151" stroke="#374151" stroke-width="1.2"/></marker></defs>
+<rect width="1885" height="1782" fill="#ffffff"/>
+<text x="40.0" y="44.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#1f2937" text-anchor="start">Diagrama de Classes — PontoaPonto (MVP de monitoramento de tempo parado em roteiros)</text>
+<text x="40.0" y="68.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#4b5563" text-anchor="start">Backend Python/FastAPI: entidades SQLAlchemy (app.models) e serviços de negócio (app.services, app.core.security)</text>
+<path d="M30,96 L288.0,96 L288.0,122 L1855,122 L1855,937 L30,937 Z" fill="#fcfcfd" stroke="#94a3b8" stroke-width="1.4"/>
+<line x1="30" y1="122" x2="288.0" y2="122" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="44.0" y="114.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#334155" text-anchor="start">app.models — Modelo de domínio</text>
+<path d="M30,990 L318.4,990 L318.4,1016 L1855,1016 L1855,1652 L30,1652 Z" fill="#fcfcfd" stroke="#94a3b8" stroke-width="1.4"/>
+<line x1="30" y1="1016" x2="318.4" y2="1016" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="44.0" y="1008.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#334155" text-anchor="start">app.services — Serviços de negócio</text>
+<polyline points="330.0,260.0 162.2,260.0 162.2,440.0" fill="none" stroke="#374151" stroke-width="1.4"/>
+<text x="322.0" y="252.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0..1</text>
+<text x="170.2" y="430.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0..1</text>
+<text x="322.0" y="276.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">usuario</text>
+<text x="154.2" y="430.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">gerente</text>
+<polyline points="432.1,313.0 432.1,400.0" fill="none" stroke="#374151" stroke-width="1.4"/>
+<text x="440.1" y="331.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0..1</text>
+<text x="440.1" y="392.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0..1</text>
+<text x="424.1" y="331.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">usuario</text>
+<text x="424.1" y="392.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">motorista</text>
+<polyline points="254.4,510.0 470.0,510.0" fill="none" stroke="#374151" stroke-width="1.4"/>
+<text x="262.4" y="502.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0..1</text>
+<text x="462.0" y="502.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0..*</text>
+<text x="262.4" y="528.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">gerente</text>
+<text x="462.0" y="528.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">motoristas</text>
+<text x="362.2" y="488.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">coordena ▸</text>
+<polyline points="960.0,470.0 713.8,470.0" fill="none" stroke="#374151" stroke-width="1.4" marker-end="url(#nav)"/>
+<text x="952.0" y="462.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0..*</text>
+<text x="721.8" y="462.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1</text>
+<text x="721.8" y="488.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">motorista</text>
+<text x="836.9" y="448.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">executa ▸</text>
+<polyline points="1088.5,614.0 1088.5,700.0" fill="none" stroke="#374151" stroke-width="1.4" marker-start="url(#comp)"/>
+<text x="1078.5" y="644.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1</text>
+<text x="1078.5" y="692.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">2..*</text>
+<text x="1098.5" y="692.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">paradas {ordered}</text>
+<polyline points="1203.8,770.0 1400.0,770.0" fill="none" stroke="#374151" stroke-width="1.4" marker-end="url(#nav)"/>
+<text x="1211.8" y="762.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0..*</text>
+<text x="1392.0" y="762.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1</text>
+<text x="1392.0" y="788.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">ponto</text>
+<text x="1301.9" y="748.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">visita ▸</text>
+<polyline points="810.0,210.0 494.6,210.0" fill="none" stroke="#374151" stroke-width="1.4" marker-end="url(#nav)"/>
+<text x="802.0" y="202.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0..*</text>
+<text x="502.6" y="202.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0..1</text>
+<text x="502.6" y="228.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">usuario</text>
+<text x="652.3" y="188.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">◂ registrada por</text>
+<polyline points="494.6,300.0 600.0,300.0" fill="none" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#dep)"/>
+<polyline points="1217.0,520.0 1400.0,520.0" fill="none" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#dep)"/>
+<path d="M470,720 L858,720 L870,732 L870,846 L470,846 Z" fill="#fffbea" stroke="#a16207" stroke-width="1.2"/>
+<path d="M858,720 L858,732 L870,732" fill="none" stroke="#a16207" stroke-width="1.2"/>
+<text x="480.0" y="739.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">RN01/RN02: a parada de ordem 1 é a partida,</text>
+<text x="480.0" y="755.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">  sem chegada e sem tempo parado.</text>
+<text x="480.0" y="771.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">tempo_parado_min = saida_em − chegada_em</text>
+<text x="480.0" y="787.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">RN03: tempo_total = Σ tempo_parado (ordem ≥ 2)</text>
+<text x="480.0" y="803.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">RN07: custo_estimado = distância × custo_por_km</text>
+<text x="480.0" y="819.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">/ = atributo derivado, recalculado por</text>
+<text x="480.0" y="835.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">  roteiros.recalcular_roteiro()</text>
+<line x1="870" y1="770" x2="960" y2="770" stroke="#a16207" stroke-width="1.1" stroke-dasharray="4 4"/>
+<path d="M1084.2,200 L1322.2,200 L1334.2,212 L1334.2,278 L1084.2,278 Z" fill="#fffbea" stroke="#a16207" stroke-width="1.2"/>
+<path d="M1322.2,200 L1322.2,212 L1334.2,212" fill="none" stroke="#a16207" stroke-width="1.2"/>
+<text x="1094.2" y="219.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">entidade ∈ {ponto, ponto_roteiro,</text>
+<text x="1094.2" y="235.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">  roteiro, parametro}</text>
+<text x="1094.2" y="251.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">acao ∈ {CREATE, UPDATE, DELETE}</text>
+<text x="1094.2" y="267.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">Gravada pelo listener after_flush</text>
+<line x1="1014.2" y1="240" x2="1084.2" y2="240" stroke="#a16207" stroke-width="1.1" stroke-dasharray="4 4"/>
+<path d="M1400,311 L1618,311 L1630,323 L1630,357 L1400,357 Z" fill="#fffbea" stroke="#a16207" stroke-width="1.2"/>
+<path d="M1618,311 L1618,323 L1630,323" fill="none" stroke="#a16207" stroke-width="1.2"/>
+<text x="1410.0" y="330.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">Linha única (id = 1), editável</text>
+<text x="1410.0" y="346.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#3f3f46" text-anchor="start">sem mudar código (RF09/RF10)</text>
+<polyline points="478.8,1090.0 560.0,1090.0" fill="none" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#dep)"/>
+<text x="519.4" y="1080.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">«use»</text>
+<polyline points="1050.0,1090.0 975.4,1090.0" fill="none" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#dep)"/>
+<text x="1012.7" y="1080.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">«use»</text>
+<polyline points="1406.0,1110.0 1500.0,1110.0" fill="none" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#dep)"/>
+<text x="1453.0" y="1100.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">«use»</text>
+<polyline points="440.0,1430.0 373.2,1430.0" fill="none" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#dep)"/>
+<text x="406.6" y="1420.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">«use»</text>
+<polyline points="809.2,1430.0 850.0,1430.0" fill="none" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#dep)"/>
+<text x="829.6" y="1420.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">«use»</text>
+<polyline points="890.0,1482.0 890.0,1522.0 221.6,1522.0 221.6,1516.0" fill="none" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#dep)"/>
+<text x="740.0" y="1516.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">«use»</text>
+<polyline points="1775.0,990.0 1775.0,937.0" fill="none" stroke="#374151" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#dep)"/>
+<text x="1735.0" y="967.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#374151" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">«use»</text>
+<rect x="600" y="250" width="150.0" height="109" rx="3" fill="#ffffff" stroke="#b7791f" stroke-width="1.5"/>
+<rect x="600" y="250" width="150.0" height="46" rx="3" fill="#fdf4e3" stroke="#b7791f" stroke-width="1.5"/>
+<text x="675.0" y="269.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#4b5563" text-anchor="middle">«enumeration»</text>
+<text x="675.0" y="286.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">Perfil</text>
+<text x="612.0" y="314.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">ADMIN</text>
+<text x="612.0" y="331.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">GERENTE</text>
+<text x="612.0" y="348.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">MOTORISTA</text>
+<rect x="330" y="150" width="164.6" height="163" rx="3" fill="#ffffff" stroke="#2f5bd3" stroke-width="1.5"/>
+<rect x="330" y="150" width="164.6" height="32" rx="3" fill="#eef3ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="412.3" y="171.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">Usuario</text>
+<text x="342.0" y="200.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ id: int {id}</text>
+<text x="342.0" y="217.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ nome: str</text>
+<text x="342.0" y="234.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ email: str {unique}</text>
+<text x="342.0" y="251.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ senha_hash: str</text>
+<text x="342.0" y="268.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ perfil: Perfil</text>
+<text x="342.0" y="285.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ ativo: bool = true</text>
+<text x="342.0" y="302.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ criado_em: datetime</text>
+<rect x="810" y="130" width="204.2" height="180" rx="3" fill="#ffffff" stroke="#2f5bd3" stroke-width="1.5"/>
+<rect x="810" y="130" width="204.2" height="32" rx="3" fill="#eef3ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="912.1" y="151.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">Auditoria</text>
+<text x="822.0" y="180.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ id: int {id}</text>
+<text x="822.0" y="197.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ usuario_email: str [0..1]</text>
+<text x="822.0" y="214.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ entidade: str</text>
+<text x="822.0" y="231.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ entidade_id: int [0..1]</text>
+<text x="822.0" y="248.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ acao: str</text>
+<text x="822.0" y="265.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ antes: JSON [0..1]</text>
+<text x="822.0" y="282.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ depois: JSON [0..1]</text>
+<text x="822.0" y="299.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ criado_em: datetime</text>
+<rect x="1400" y="130" width="283.4" height="163" rx="3" fill="#ffffff" stroke="#2f5bd3" stroke-width="1.5"/>
+<rect x="1400" y="130" width="283.4" height="32" rx="3" fill="#eef3ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="1541.7" y="151.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">Parametro</text>
+<text x="1412.0" y="180.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ id: int {id} = 1</text>
+<text x="1412.0" y="197.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ valor_combustivel_litro: float = 6.29</text>
+<text x="1412.0" y="214.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ km_por_litro_padrao: float = 10.0</text>
+<text x="1412.0" y="231.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ custo_adicional_km: float = 0.0</text>
+<text x="1412.0" y="248.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ jornada_padrao_horas: float = 8.0</text>
+<text x="1412.0" y="265.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ tempo_minimo_parada_min: float = 0.0</text>
+<text x="1412.0" y="282.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ atualizado_em: datetime</text>
+<rect x="70" y="440" width="184.4" height="129" rx="3" fill="#ffffff" stroke="#2f5bd3" stroke-width="1.5"/>
+<rect x="70" y="440" width="184.4" height="32" rx="3" fill="#eef3ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="162.2" y="461.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">Gerente</text>
+<text x="82.0" y="490.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ id: int {id}</text>
+<text x="82.0" y="507.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ nome: str</text>
+<text x="82.0" y="524.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ cargo: str = &quot;Gerente&quot;</text>
+<text x="82.0" y="541.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ telefone: str [0..1]</text>
+<text x="82.0" y="558.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ email: str</text>
+<rect x="470" y="400" width="243.8" height="197" rx="3" fill="#ffffff" stroke="#2f5bd3" stroke-width="1.5"/>
+<rect x="470" y="400" width="243.8" height="32" rx="3" fill="#eef3ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="591.9" y="421.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">Motorista</text>
+<text x="482.0" y="450.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ id: int {id}</text>
+<text x="482.0" y="467.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ nome: str</text>
+<text x="482.0" y="484.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ telefone: str [0..1]</text>
+<text x="482.0" y="501.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ documento: str [0..1]</text>
+<text x="482.0" y="518.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ veiculo: str</text>
+<text x="482.0" y="535.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ placa: str [0..1]</text>
+<text x="482.0" y="552.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ km_por_litro: float [0..1]</text>
+<text x="482.0" y="569.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ ativo: bool = true</text>
+<text x="482.0" y="586.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ anonimizado_em: datetime [0..1]</text>
+<rect x="960" y="400" width="257.0" height="214" rx="3" fill="#ffffff" stroke="#2f5bd3" stroke-width="1.5"/>
+<rect x="960" y="400" width="257.0" height="32" rx="3" fill="#eef3ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="1088.5" y="421.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">Roteiro</text>
+<text x="972.0" y="450.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ id: int {id}</text>
+<text x="972.0" y="467.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ nome: str [0..1]</text>
+<text x="972.0" y="484.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ data: date</text>
+<text x="972.0" y="501.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ status: StatusRoteiro = PLANEJADO</text>
+<text x="972.0" y="518.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ /distancia_total_km: float</text>
+<text x="972.0" y="535.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ distancia_manual: bool = false</text>
+<text x="972.0" y="552.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ /tempo_total_parado_min: float</text>
+<text x="972.0" y="569.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ /custo_por_km: float</text>
+<text x="972.0" y="586.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ /custo_estimado: float</text>
+<text x="972.0" y="603.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ criado_em: datetime</text>
+<rect x="1400" y="470" width="170.0" height="109" rx="3" fill="#ffffff" stroke="#b7791f" stroke-width="1.5"/>
+<rect x="1400" y="470" width="170.0" height="46" rx="3" fill="#fdf4e3" stroke="#b7791f" stroke-width="1.5"/>
+<text x="1485.0" y="489.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#4b5563" text-anchor="middle">«enumeration»</text>
+<text x="1485.0" y="506.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">StatusRoteiro</text>
+<text x="1412.0" y="534.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">PLANEJADO</text>
+<text x="1412.0" y="551.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">EM_ANDAMENTO</text>
+<text x="1412.0" y="568.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">CONCLUIDO</text>
+<rect x="960" y="700" width="243.8" height="197" rx="3" fill="#ffffff" stroke="#2f5bd3" stroke-width="1.5"/>
+<rect x="960" y="700" width="243.8" height="32" rx="3" fill="#eef3ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="1081.9" y="721.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">PontoRoteiro</text>
+<text x="972.0" y="750.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ id: int {id}</text>
+<text x="972.0" y="767.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ ordem: int</text>
+<text x="972.0" y="784.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ chegada_em: datetime [0..1]</text>
+<text x="972.0" y="801.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ saida_em: datetime [0..1]</text>
+<text x="972.0" y="818.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ chegada_lat: float [0..1]</text>
+<text x="972.0" y="835.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ chegada_lng: float [0..1]</text>
+<text x="972.0" y="852.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ saida_lat: float [0..1]</text>
+<text x="972.0" y="869.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ saida_lng: float [0..1]</text>
+<text x="972.0" y="886.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ /tempo_parado_min: float [0..1]</text>
+<rect x="1400" y="720" width="191.0" height="146" rx="3" fill="#ffffff" stroke="#2f5bd3" stroke-width="1.5"/>
+<rect x="1400" y="720" width="191.0" height="32" rx="3" fill="#eef3ff" stroke="#2f5bd3" stroke-width="1.5"/>
+<text x="1495.5" y="741.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">Ponto</text>
+<text x="1412.0" y="770.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ id: int {id}</text>
+<text x="1412.0" y="787.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ descricao: str</text>
+<text x="1412.0" y="804.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ endereco: str</text>
+<text x="1412.0" y="821.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ latitude: float [0..1]</text>
+<text x="1412.0" y="838.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ longitude: float [0..1]</text>
+<text x="1412.0" y="855.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ ativo: bool = true</text>
+<rect x="70" y="1050" width="408.8" height="262" rx="3" fill="#ffffff" stroke="#2f855a" stroke-width="1.5"/>
+<rect x="70" y="1050" width="408.8" height="46" rx="3" fill="#ecfaf2" stroke="#2f855a" stroke-width="1.5"/>
+<text x="274.4" y="1069.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#4b5563" text-anchor="middle">«utility»</text>
+<text x="274.4" y="1086.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">roteiros</text>
+<text x="82.0" y="1114.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ criar_roteiro(nome, data, motorista, ponto_ids): Roteiro</text>
+<text x="82.0" y="1131.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ definir_sequencia(roteiro, ponto_ids)</text>
+<text x="82.0" y="1148.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ adicionar_parada(roteiro, ponto_id): PontoRoteiro</text>
+<text x="82.0" y="1165.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ remover_parada(roteiro, parada)</text>
+<text x="82.0" y="1182.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ registrar_chegada(roteiro, parada, coleta)</text>
+<text x="82.0" y="1199.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ registrar_saida(roteiro, parada, coleta)</text>
+<text x="82.0" y="1216.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ corrigir_horarios(roteiro, parada, dados)</text>
+<text x="82.0" y="1233.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ validar_sequencia(roteiro)</text>
+<text x="82.0" y="1250.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ atualizar_status(roteiro)</text>
+<text x="82.0" y="1267.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ recalcular_roteiro(roteiro, parametros)</text>
+<text x="82.0" y="1284.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ obter_parametros(): Parametro</text>
+<text x="82.0" y="1301.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ custo_por_km_do_motorista(motorista, parametros): float</text>
+<rect x="560" y="1050" width="415.4" height="194" rx="3" fill="#ffffff" stroke="#2f855a" stroke-width="1.5"/>
+<rect x="560" y="1050" width="415.4" height="46" rx="3" fill="#ecfaf2" stroke="#2f855a" stroke-width="1.5"/>
+<text x="767.7" y="1069.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#4b5563" text-anchor="middle">«utility»</text>
+<text x="767.7" y="1086.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">calculo</text>
+<text x="572.0" y="1114.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ eh_partida(ordem: int): bool</text>
+<text x="572.0" y="1131.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ tempo_parado_min(ordem, chegada, saida, minimo): float</text>
+<text x="572.0" y="1148.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ tempo_total_parado(tempos_por_ordem): float</text>
+<text x="572.0" y="1165.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ percentual_jornada(total_min, dias, jornada_h): float</text>
+<text x="572.0" y="1182.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ haversine_km(lat1, lon1, lat2, lon2): float</text>
+<text x="572.0" y="1199.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ distancia_trajeto_km(coordenadas): float</text>
+<text x="572.0" y="1216.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ custo_por_km(combustivel, km_por_litro, adicional): float</text>
+<text x="572.0" y="1233.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ custo_estimado(distancia_km, custo_km): float</text>
+<rect x="1050" y="1050" width="356.0" height="194" rx="3" fill="#ffffff" stroke="#2f855a" stroke-width="1.5"/>
+<rect x="1050" y="1050" width="356.0" height="46" rx="3" fill="#ecfaf2" stroke="#2f855a" stroke-width="1.5"/>
+<text x="1228.0" y="1069.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#4b5563" text-anchor="middle">«utility»</text>
+<text x="1228.0" y="1086.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">consultas</text>
+<text x="1062.0" y="1114.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ listar_paradas(filtro, busca, page, page_size)</text>
+<text x="1062.0" y="1131.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ todas_paradas(filtro, busca): HistoricoItem[*]</text>
+<text x="1062.0" y="1148.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ resumo(filtro, parametros): Resumo</text>
+<text x="1062.0" y="1165.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ serie_por_dia(filtro, parametros): PontoSerie[*]</text>
+<text x="1062.0" y="1182.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ serie_por_mes(filtro, parametros): PontoSerie[*]</text>
+<text x="1062.0" y="1199.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ ranking_enderecos(filtro, limite)</text>
+<text x="1062.0" y="1216.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ ranking_motoristas(filtro, parametros)</text>
+<text x="1062.0" y="1233.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ periodo(filtro, parametros): DashboardPeriodo</text>
+<rect x="1500" y="1070" width="197.6" height="155" rx="3" fill="#ffffff" stroke="#6b7280" stroke-width="1.5"/>
+<rect x="1500" y="1070" width="197.6" height="46" rx="3" fill="#f3f4f6" stroke="#6b7280" stroke-width="1.5"/>
+<text x="1598.8" y="1089.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#4b5563" text-anchor="middle">«dataclass»</text>
+<text x="1598.8" y="1106.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">Filtro</text>
+<text x="1512.0" y="1134.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ inicio: date</text>
+<text x="1512.0" y="1151.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ fim: date</text>
+<text x="1512.0" y="1168.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ motorista_id: int [0..1]</text>
+<text x="1512.0" y="1185.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ escopo: int [0..*]</text>
+<line x1="1500" y1="1196" x2="1697.6" y2="1196" stroke="#6b7280" stroke-width="1.2"/>
+<text x="1512.0" y="1214.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ aplicar(stmt): Select</text>
+<rect x="70" y="1390" width="303.2" height="126" rx="3" fill="#ffffff" stroke="#2f855a" stroke-width="1.5"/>
+<rect x="70" y="1390" width="303.2" height="46" rx="3" fill="#ecfaf2" stroke="#2f855a" stroke-width="1.5"/>
+<text x="221.6" y="1409.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#4b5563" text-anchor="middle">«utility»</text>
+<text x="221.6" y="1426.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">security</text>
+<text x="82.0" y="1454.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ hash_senha(senha): str</text>
+<text x="82.0" y="1471.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ verificar_senha(senha, senha_hash): bool</text>
+<text x="82.0" y="1488.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ criar_token(usuario_id, perfil): str</text>
+<text x="82.0" y="1505.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ decodificar_token(token): dict</text>
+<rect x="440" y="1390" width="369.2" height="92" rx="3" fill="#ffffff" stroke="#2f855a" stroke-width="1.5"/>
+<rect x="440" y="1390" width="369.2" height="46" rx="3" fill="#ecfaf2" stroke="#2f855a" stroke-width="1.5"/>
+<text x="624.6" y="1409.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#4b5563" text-anchor="middle">«utility»</text>
+<text x="624.6" y="1426.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">cadastros</text>
+<text x="452.0" y="1454.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ email_em_uso(email, exceto_usuario_id): bool</text>
+<text x="452.0" y="1471.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ criar_usuario(nome, email, senha, perfil): Usuario</text>
+<rect x="850" y="1390" width="263.6" height="92" rx="3" fill="#ffffff" stroke="#2f855a" stroke-width="1.5"/>
+<rect x="850" y="1390" width="263.6" height="46" rx="3" fill="#ecfaf2" stroke="#2f855a" stroke-width="1.5"/>
+<text x="981.8" y="1409.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#4b5563" text-anchor="middle">«utility»</text>
+<text x="981.8" y="1426.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">lgpd</text>
+<text x="862.0" y="1454.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ mascarar_documento(documento): str</text>
+<text x="862.0" y="1471.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ anonimizar_motorista(motorista)</text>
+<rect x="1170" y="1520" width="276.8" height="92" rx="3" fill="#ffffff" stroke="#2f855a" stroke-width="1.5"/>
+<rect x="1170" y="1520" width="276.8" height="46" rx="3" fill="#ecfaf2" stroke="#2f855a" stroke-width="1.5"/>
+<text x="1308.4" y="1539.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#4b5563" text-anchor="middle">«utility»</text>
+<text x="1308.4" y="1556.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">auditoria</text>
+<text x="1182.0" y="1584.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ definir_usuario(usuario_id, email)</text>
+<text x="1182.0" y="1601.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">- registrar_auditoria()  «after_flush»</text>
+<rect x="1170" y="1390" width="217.4" height="92" rx="3" fill="#ffffff" stroke="#2f855a" stroke-width="1.5"/>
+<rect x="1170" y="1390" width="217.4" height="46" rx="3" fill="#ecfaf2" stroke="#2f855a" stroke-width="1.5"/>
+<text x="1278.7" y="1409.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#4b5563" text-anchor="middle">«utility»</text>
+<text x="1278.7" y="1426.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">relatorios</text>
+<text x="1182.0" y="1454.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ csv_paradas(itens): str</text>
+<text x="1182.0" y="1471.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ csv_roteiros(roteiros): str</text>
+<rect x="1450" y="1390" width="375.8" height="75" rx="3" fill="#ffffff" stroke="#2f855a" stroke-width="1.5"/>
+<rect x="1450" y="1390" width="375.8" height="46" rx="3" fill="#ecfaf2" stroke="#2f855a" stroke-width="1.5"/>
+<text x="1637.9" y="1409.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#4b5563" text-anchor="middle">«utility»</text>
+<text x="1637.9" y="1426.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle">geocoding</text>
+<text x="1462.0" y="1454.0" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" font-weight="400" fill="#111827" text-anchor="start">+ geocodificar(endereco, limite): GeocodeResultado[*]</text>
+<line x1="40" y1="1694" x2="1845" y2="1694" stroke="#e5e7eb"/>
+<text x="40.0" y="1722.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">◆— composição</text>
+<text x="163.7" y="1722.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">—&gt; associação navegável</text>
+<text x="356.4" y="1722.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">- - -&gt; dependência</text>
+<text x="514.6" y="1722.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">/atributo = derivado</text>
+<text x="686.6" y="1722.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">{id} = identificador</text>
+<text x="858.6" y="1722.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">[0..1] = opcional</text>
+<text x="1009.9" y="1722.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">«utility» = módulo Python de funções</text>
+</svg>
