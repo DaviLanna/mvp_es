@@ -13,6 +13,9 @@ dist/
 .env
 .env.local
 
+# Documentos do trabalho (enunciado e anotações locais)
+/*.pdf
+
 # IDE / OS
 .vscode/
 .idea/
